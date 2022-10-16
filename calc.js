@@ -1,22 +1,20 @@
-const calc = (action, a, b) => {
-    let result;
+function calc(action, num1, num2) {
     switch (action) {
         case 'add':
-            result = a + b;
+            return num1 + num2;
             break;
         case 'multi':
-            result = a * b;
+            return num1 * num2;
             break;
         case 'substract':
-            result = a - b;
+            return num1 - num2;
             break;
-        default:
-            result = 'Error';
+        case 'correct':
+            return numnode1 / num2;
+            break;
     }
-    return result;
-};
+}
 
-console.log(calc('multi', 1, 2));
-console.log(calc('add', 1, 2));
-console.log(calc('substract', 1, 2));
-console.log(calc('test', 1, 2));
+console.log(calc(`add`, 1, 2));
+console.log(calc(`multi`, 1, 2));
+console.log(calc(`substract`, 4, 2));
